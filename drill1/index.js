@@ -1,5 +1,5 @@
 var register = {
-  transactions: []
+  transactions: [];
 };
 
 function addTransaction(transaction) {
@@ -16,12 +16,12 @@ function getTotal() {
    }
   }
   return totalPrice;
-}
+};
 
 function getFormattedTotal() {
   var formattedPrice = getTotal();
   return formattedPrice.toFixed(2);
-}
+};
 
 function reset() {
   register.transactions = [];
