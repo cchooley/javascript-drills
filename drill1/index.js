@@ -4,8 +4,7 @@ var register = {
 
 function addTransaction(transaction) {
   register.transactions.push(transaction);
-};
-
+}
 
 function getTotal() {
   var totalPrice = 0;
@@ -16,19 +15,19 @@ function getTotal() {
    }
   }
   return totalPrice;
-};
+}
 
 function getFormattedTotal() {
   var formattedPrice = getTotal();
   return formattedPrice.toFixed(2);
-};
+}
 
 function reset() {
   register.transactions = [];
-};
+}
 
 
-  module.exports = {
+module.exports = {
   // Uncomment these as you define them
   register,
   addTransaction,
