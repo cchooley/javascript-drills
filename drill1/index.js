@@ -1,5 +1,5 @@
 var register = {
-  transactions: [];
+  transactions: []
 };
 
 function addTransaction(transaction) {
