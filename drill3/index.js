@@ -9,7 +9,7 @@ function addTransaction(transaction) {
 function getTransactionsBySalesperson(name) {                 // declare function that takes salesperson name
   var cashierSales = [];
   for (var i = 0; i < register.transactions.length; i++) {  // loop through array to find trans. object
-    var totalSales = register.transactions[i]
+    var totalSales = register.transactions[i];
     if (name === totalSales.cashier) {
       cashierSales.push(totalSales);
     }
@@ -26,10 +26,10 @@ function reset() {
 }
 
 module.exports = {
-    // Uncomment these as you define them
-    register,
-    addTransaction,
-    getTransactionsBySalesperson,
-    removeLastTransaction,
-    reset,
+  // Uncomment these as you define them
+  register,
+  addTransaction,
+  getTransactionsBySalesperson,
+  removeLastTransaction,
+  reset,
 };
